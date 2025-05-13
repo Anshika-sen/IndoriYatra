@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("images/waterfall.gif") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .form-container {
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .form-container h2 {
+            color: black;
+            margin-bottom: 20px;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .login-btn {
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        .login-btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to right, #ff512f, #ff7b3e);
+        }
+
+        .form-toggle {
+            margin-top: 15px;
+            color: black;
+            font-size: 14px;
+        }
+
+        .form-toggle a {
+            color: #ff512f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="POST">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="form-toggle">Don't have an account? <a href="signup.php">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>

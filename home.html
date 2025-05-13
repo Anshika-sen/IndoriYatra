@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndoriYatra - Explore Indore</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo" onclick="openModal()">
+                <img src="logo.jpg" alt="IndoriYatra" class="logo-img">IndoriYatra</a>
+            <ul class="nav-links">
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="index.html">Hidden Gems</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="logoModal" class="modal"> 
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="logo.jpg" class="modal-content">
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Wander. Discover. Repeat.</h1>
+            <p>Lost? nah, Just Exploring the Unseen Side of Indore!</p>
+            <a href="index.html" class="btn">Hidden Gems</a>
+        </div>
+    </header>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Top Destinations in Indore</h2>
+            <div class="destination-grid">
+                <div class="destination">
+                    <img src="images/rajwada.jpg" alt="Rajwada Palace">
+                    <h3>Rajwada Palace</h3>
+                    <p>A historic palace in the heart of Indore.</p>
+                </div>
+                <div class="destination">
+                    <img src="images/lotusValley.jpg" alt="Sarafa Bazaar">
+                    <h3>Lotus Valley</h3>
+                    <p>Whispers of Water, Echoes of Petals.</p>
+                </div>
+                <div class="destination">
+                    <img src="images/patalPani.jpg" alt="Patalpani Waterfall">
+                    <h3>Patalpani Waterfall</h3>
+                    <p>A breathtaking natural waterfall on the outskirts of the city.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial">
+                <p>"IndoriYatra provided an unforgettable experience. The tour guides were knowledgeable and friendly."</p>
+                <h4>- Anjali S.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"A seamless and enjoyable journey through Indore's most beautiful spots. Highly recommend!"</p>
+                <h4>- Rohan M.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@indoriyatra.com | Phone: +91 12345 67890</p>
+            <p>&copy; 2025 IndoriYatra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
